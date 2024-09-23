@@ -30,7 +30,7 @@ export default function Layout({ children }: Props) {
 								<option>about</option>
 							</select>
 							<select>
-								<option>blog</option>
+								<option>articles</option>
 								<option>2024-09-21 • Something Devestating</option>
 							</select>
 							<button>GH</button>

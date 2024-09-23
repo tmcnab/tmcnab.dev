@@ -13,7 +13,7 @@ export default function Modal(props: ModalProps) {
 		display: props.open ? 'block' : 'none',
 		height: '100vh',
 		left: 0,
-		opacity: 0.75,
+		opacity: 0.9,
 		position: 'fixed',
 		top: 0,
 		width: '100vw',

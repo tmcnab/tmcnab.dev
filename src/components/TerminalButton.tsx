@@ -10,7 +10,7 @@ export default function TerminalButton () {
 	return (
 		<>
 			<Button children={<Terminal />} onClick={() => setOpen(true)} />
-			<Modal open={open} title='Terminal' />
+			<Modal open={open} title='System' />
 		</>
 	)
 }

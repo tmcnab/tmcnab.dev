@@ -3,6 +3,7 @@
 import Background from '@/components/Modal/Background'
 import { CSSProperties } from 'react'
 import Header from './Header'
+import Footer from './Footer'
 
 export interface ModalProps {
 	open: boolean
@@ -15,7 +16,6 @@ const style: CSSProperties = {
 	height: '80vh',
 	left: '10vw',
 	opacity: 1,
-	padding: '1rem',
 	position: 'absolute',
 	top: '10vh',
 	width: '80vw',
@@ -29,10 +29,8 @@ export default function Modal({ open, title }: ModalProps) {
 		<Background open={open}>
 			<div style={style}>
 				<Header title={title} />
-				<pre style={{ minHeight: '60vh' }}>BOOTING SYSTEM</pre>
-				<footer>
-					<input style={{border: '1px solid white'}} />
-				</footer>
+				<pre style={{ border: '1px solid gray', minHeight: '60vh', padding: '1rem' }}>BOOTING SYSTEM</pre>
+				<Footer />
 			</div>
 		</Background>
 	)

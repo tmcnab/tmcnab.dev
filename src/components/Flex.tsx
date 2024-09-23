@@ -2,7 +2,7 @@ import { CSSProperties, ReactNode } from "react"
 
 export interface FlexProps {
 	children: ReactNode
-	justifyContent: 'space-around' | 'space-between' | 'center' | 'end' | 'space-evenly' | 'start'
+	justifyContent?: 'space-around' | 'space-between' | 'center' | 'end' | 'space-evenly' | 'start'
 	vertical?: boolean
 }
 

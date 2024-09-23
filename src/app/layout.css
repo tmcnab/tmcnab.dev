@@ -1,24 +1,20 @@
 header {
+	margin-bottom: 2rem;
+	border: 1px solid white;
 	padding: 1rem;
-	font-size: 40px;
 }
 
-
 .header-title {
-	font-size: 1rem;
+	font-size: 2rem;
+	font-weight: bold;
 }
 
 .header-subtitle {
 	font-size: 0.75rem;
+	color: red;
 }
 
 main {
-	padding-left: 1rem;
-	padding-right: 1rem;
-}
-
-select {
-	border-radius: 0.25rem;
-	padding-left: 0.5rem;
-	padding-right: 0.25rem;
+	border: 1px solid white;
+	padding: 1rem;
 }

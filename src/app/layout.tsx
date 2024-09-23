@@ -35,9 +35,6 @@ export default function Layout({ children }: Props) {
 								<Button>
 									<GitHub />
 								</Button>
-								<Button>
-									<Terminal />
-								</Button>
 							</Flex>
 						</Flex>
 					</Flex>
@@ -45,6 +42,11 @@ export default function Layout({ children }: Props) {
 				<main>
 					{children}
 				</main>
+				<footer>
+					<Button>
+						<Terminal />
+					</Button>
+				</footer>
 			</body>
 		</html >
 	)

@@ -1,8 +1,17 @@
-export default function ArticleSelect() {
+'use client'
+
+import { ChangeEventHandler } from "react"
+import { useRouter } from "next/navigation"
+
+export default function ArticleSelect () {
+	const router = useRouter()
+
+	const onChange: ChangeEventHandler<HTMLSelectElement> = (event) =>
+		router.push(event.target.value)
+
 	return (
-		<select>
+		<select onChange={onChange}>
 			<option>articles</option>
-			<option>2024-09-21 • Something Devestating</option>
 		</select>
 	)
 }

@@ -9,11 +9,8 @@ export default function PageSelect () {
 	const onChange: ChangeEventHandler<HTMLSelectElement> = (event) =>
 		router.push(event.target.value)
 
-	console.log(router)
-
 	return (
 		<select onChange={onChange}>
-			<option>pages</option>
 			<option children='index' value='/' />
 			<option children='about' value='/about' />
 			<option children='projects' value='/projects' />

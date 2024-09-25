@@ -7,8 +7,9 @@ import Button from '@/components/Button'
 import Flex from "@/components/Flex"
 import Link from 'next/link'
 import PageSelect from '@/components/PageSelect'
-import type { Metadata } from "next"
 import TerminalButton from '@/components/TerminalButton'
+import type { Metadata } from "next"
+import ThemeButton from '@/components/ThemeButton'
 
 export const metadata: Metadata = {
 	title: "tmcnab.dev • Tristan McNab's internet home",
@@ -43,7 +44,10 @@ export default function Layout({ children }: Props) {
 					{children}
 				</main>
 				<footer>
-					<TerminalButton />
+					<Flex>
+						<TerminalButton />
+						<ThemeButton />
+					</Flex>
 				</footer>
 			</body>
 		</html >

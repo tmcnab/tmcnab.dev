@@ -5,7 +5,6 @@ import { ReactNode } from "react"
 import ArticleSelect from '@/components/ArticleSelect'
 import Flex from "@/components/Flex"
 import Link from 'next/link'
-import PageSelect from '@/components/PageSelect'
 import TerminalButton from '@/components/TerminalButton'
 import ThemeButton from '@/components/ThemeButton'
 import type { Metadata } from "next"
@@ -30,7 +29,6 @@ export default function Layout({ children }: Props) {
 						</div>
 						<Flex justifyContent='start' vertical>
 							<Flex>
-								<PageSelect />
 								<ArticleSelect />
 								<Link href='/'>
 									<Home />

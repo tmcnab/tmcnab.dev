@@ -1,9 +1,8 @@
 import './layout.css'
 import "./globals.css"
-import { GitHub } from 'react-feather'
+import { GitHub, HelpCircle, Home } from 'react-feather'
 import { ReactNode } from "react"
 import ArticleSelect from '@/components/ArticleSelect'
-import Button from '@/components/Button'
 import Flex from "@/components/Flex"
 import Link from 'next/link'
 import PageSelect from '@/components/PageSelect'
@@ -33,9 +32,15 @@ export default function Layout({ children }: Props) {
 							<Flex>
 								<PageSelect />
 								<ArticleSelect />
-								<Button>
+								<Link href='/'>
+									<Home />
+								</Link>
+								<Link href='/about'>
+									<HelpCircle />
+								</Link>
+								<Link href='https://github.com/tmcnab'>
 									<GitHub />
-								</Button>
+								</Link>
 							</Flex>
 						</Flex>
 					</Flex>

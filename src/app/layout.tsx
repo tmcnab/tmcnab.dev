@@ -1,8 +1,7 @@
 import './layout.css'
 import "./globals.css"
-import { GitHub, HelpCircle, Home } from 'react-feather'
+import { Cpu, GitHub, HelpCircle } from 'react-feather'
 import { ReactNode } from "react"
-import ArticleSelect from '@/components/ArticleSelect'
 import Flex from "@/components/Flex"
 import Link from 'next/link'
 import TerminalButton from '@/components/TerminalButton'
@@ -29,9 +28,8 @@ export default function Layout({ children }: Props) {
 						</div>
 						<Flex justifyContent='start' vertical>
 							<Flex>
-								<ArticleSelect />
-								<Link href='/'>
-									<Home />
+								<Link href='/projects'>
+									<Cpu />
 								</Link>
 								<Link href='/about'>
 									<HelpCircle />

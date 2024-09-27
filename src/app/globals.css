@@ -46,8 +46,9 @@ body {
 
 button {
 	background-color: transparent;
-	padding: 0.5rem;
 	border: none;
+	cursor: pointer;
+	padding: 0.5rem;
 }
 
 select {

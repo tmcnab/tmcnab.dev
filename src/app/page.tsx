@@ -3,7 +3,7 @@ export default function Page () {
 		<>
 			<p>My name is Tristan.</p>
 			<br />
-			<p>I'm a programmer, engineer, husband and socialist. This website attempts to catalogue my previous and current activities.</p>
+			<p>I am a programmer, engineer, husband and socialist. This website attempts to catalogue my previous, current and future activities. Maybe an epitaph too.</p>
 		</>
 	)
 }

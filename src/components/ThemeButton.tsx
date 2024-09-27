@@ -1,6 +1,6 @@
 'use client'
 
-import { Moon, Sun } from "react-feather"
+import { Sun } from "react-feather"
 import Button from "./Button"
 import Flex from "./Flex"
 

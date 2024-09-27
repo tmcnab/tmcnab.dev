@@ -1,6 +1,6 @@
 import './layout.css'
 import "./globals.css"
-import { GitHub, Terminal } from 'react-feather'
+import { GitHub } from 'react-feather'
 import { ReactNode } from "react"
 import ArticleSelect from '@/components/ArticleSelect'
 import Button from '@/components/Button'
@@ -33,7 +33,7 @@ export default function Layout({ children }: Props) {
 							<Flex>
 								<PageSelect />
 								<ArticleSelect />
-								<Button>
+								<Button onClick={() => {}}>
 									<GitHub />
 								</Button>
 							</Flex>

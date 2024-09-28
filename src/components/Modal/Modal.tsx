@@ -5,6 +5,7 @@ import Header from './Header'
 export interface ModalProps {
 	children: ReactNode
 	open: boolean
+	onClose: () => void
 	title: string
 }
 
@@ -18,11 +19,11 @@ const style: CSSProperties = {
 	zIndex: 10010,
 }
 
-export default function Modal({ children, open, title }: ModalProps) {
+export default function Modal({ children, onClose, open, title }: ModalProps) {
 	return (
 		<Background open={open}>
 			<div style={style}>
-				<Header title={title} />
+				<Header onClick={onClose} title={title} />
 				{children}
 			</div>
 		</Background>

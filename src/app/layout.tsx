@@ -4,7 +4,7 @@ import { Cpu, GitHub, HelpCircle } from 'react-feather'
 import { ReactNode } from "react"
 import Flex from "@/components/Flex"
 import Link from 'next/link'
-import TerminalButton from '@/components/TerminalButton'
+import TerminalButton from '@/components/Terminal/TerminalButton'
 import ThemeButton from '@/components/ThemeButton'
 import type { Metadata } from "next"
 

@@ -9,7 +9,6 @@ export interface CardProps {
 const style: CSSProperties = {
 	border: '1px solid white',
 	borderRadius: '0.5rem',
-	margin: '1rem 0 1rem 0',
 	width: '100%',
 }
 

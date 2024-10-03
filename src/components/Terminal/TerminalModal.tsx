@@ -1,6 +1,6 @@
 import Modal from "../Modal/Modal"
-import TerminalInput from "./TerminalInput"
-import TerminalLog from "./TerminalLog"
+import Pre from "./Pre"
+import TextArea from "./TextArea"
 
 export interface TerminalModalProps {
 	onClose: () => void
@@ -10,8 +10,8 @@ export interface TerminalModalProps {
 export default function TerminalModal(props: TerminalModalProps) {
 	return (
 		<Modal onClose={props.onClose} open={props.open} title='System'>
-			<TerminalLog />
-			<TerminalInput />
+			<Pre />
+			<TextArea />
 		</Modal>
 	)
 }

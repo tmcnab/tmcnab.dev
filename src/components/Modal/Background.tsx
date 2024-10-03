@@ -9,11 +9,11 @@ export interface ModalProps {
 
 export default function Modal(props: ModalProps) {
 	const style: CSSProperties = {
-		backgroundColor: 'gray',
+		backgroundColor: 'black',
 		display: props.open ? 'block' : 'none',
 		height: '100vh',
 		left: 0,
-		opacity: 0.9,
+		opacity: 0.75,
 		position: 'fixed',
 		top: 0,
 		width: '100vw',

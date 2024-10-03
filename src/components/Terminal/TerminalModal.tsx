@@ -1,4 +1,6 @@
 import Modal from "../Modal/Modal"
+import TerminalInput from "./TerminalInput"
+import TerminalLog from "./TerminalLog"
 
 export interface TerminalModalProps {
 	onClose: () => void
@@ -8,8 +10,8 @@ export interface TerminalModalProps {
 export default function TerminalModal(props: TerminalModalProps) {
 	return (
 		<Modal onClose={props.onClose} open={props.open} title='System'>
-			<pre style={{  height: '24ch', width: '80ch' }} />
-			<input autoFocus style={{ border: 'none', width: '80ch' }} value={'> '} />
+			<TerminalLog />
+			<TerminalInput />
 		</Modal>
 	)
 }

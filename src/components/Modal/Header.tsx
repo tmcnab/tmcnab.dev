@@ -10,6 +10,7 @@ const style: CSSProperties = {
 	borderBottom: '1px solid white',
 	display: 'flex',
 	justifyContent: 'space-between',
+	marginBottom: 0,
 }
 
 export default function Header (props: HeaderProps) {

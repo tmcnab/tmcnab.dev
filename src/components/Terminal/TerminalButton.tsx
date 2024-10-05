@@ -9,7 +9,7 @@ export default function TerminalButton() {
 	const [open, setOpen] = useState<boolean>(false)
 	return (
 		<>
-			<Button children={<Terminal />} onClick={() => setOpen(true)} />
+			<Button children={<Terminal />} disabled onClick={() => setOpen(true)} />
 			<TerminalModal onClose={() => setOpen(false)} open={open} />
 		</>
 	)

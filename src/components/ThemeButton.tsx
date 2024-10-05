@@ -16,6 +16,6 @@ export default function ThemeButton () {
 		console.log('toggle theme')
 	
 	return (
-		<Button children={children} onClick={onClick} />
+		<Button children={children} disabled onClick={onClick} />
 	)
 }

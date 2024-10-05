@@ -1,6 +1,6 @@
 import './layout.css'
 import "./globals.css"
-import { Cpu, GitHub, HelpCircle } from 'react-feather'
+import { Cpu, GitHub, HelpCircle, Linkedin } from 'react-feather'
 import { ReactNode } from "react"
 import Flex from "@/components/Flex"
 import Link from 'next/link'
@@ -33,6 +33,9 @@ export default function Layout({ children }: Props) {
 								</Link>
 								<Link href='/about'>
 									<HelpCircle />
+								</Link>
+								<Link href='https://www.linkedin.com/in/tmcnab/'>
+									<Linkedin />
 								</Link>
 								<Link href='https://github.com/tmcnab'>
 									<GitHub />

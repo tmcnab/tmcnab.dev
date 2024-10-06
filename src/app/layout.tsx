@@ -1,4 +1,3 @@
-import './layout.css'
 import "./globals.css"
 import { ReactNode } from "react"
 import Footer from './Footer'

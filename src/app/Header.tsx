@@ -6,14 +6,9 @@ export default function Header() {
 	return (
 		<header style={{ paddingBottom: '1rem' }}>
 			<Flex>
-				<div>
-					<Link className='header-title' href='/'>tmcnab.dev</Link>
-					<div className='header-subtitle'>
-						<a href='https://en.wikipedia.org/wiki/I_know_that_I_know_nothing' target='_blank'>
-							scio me nihil scire
-						</a>
-					</div>
-				</div>
+				<Link className='header-title' href='/'>
+					<h1>tmcnab.dev</h1>
+				</Link>
 				<Flex justifyContent='center' vertical>
 					<Flex>
 						<Link href='/projects'>

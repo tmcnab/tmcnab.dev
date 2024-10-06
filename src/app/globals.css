@@ -30,11 +30,21 @@ html, body {
 
 a {
 	color: inherit;
+	border-width: 1px;
+	border-style: solid;
+	border-color: white;
 	text-decoration: none;
 }
 
-p a {
-	text-decoration: underline dotted;
+@media (prefers-color-scheme: dark) {
+	a {
+		border-color: black;
+	}
+}
+
+
+a:hover {
+	border-color: red;
 }
 
 body {

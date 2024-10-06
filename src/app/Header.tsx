@@ -8,7 +8,11 @@ export default function Header() {
 			<Flex>
 				<div>
 					<Link className='header-title' href='/'>tmcnab.dev</Link>
-					<div className='header-subtitle'>scio me nihil scire</div>
+					<div className='header-subtitle'>
+						<a href='https://en.wikipedia.org/wiki/I_know_that_I_know_nothing' target='_blank'>
+							scio me nihil scire
+						</a>
+					</div>
 				</div>
 				<Flex justifyContent='center' vertical>
 					<Flex>

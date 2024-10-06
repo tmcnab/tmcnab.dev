@@ -4,7 +4,7 @@ import ThemeButton from "@/components/ThemeButton"
 
 export default function Footer() {
 	return (
-		<footer>
+		<footer style={{ paddingTop: '1rem' }}>
 			<Flex>
 				<TerminalButton />
 				<ThemeButton />

@@ -46,6 +46,10 @@ body {
 	padding: 2rem;
 }
 
+main {
+	min-height: 77vh;
+}
+
 button {
 	background-color: transparent;
 	border: none;
@@ -63,7 +67,6 @@ input {
 	border-style: solid;
 	border-color: black;
 }
-
 
 @media (prefers-color-scheme: dark) {
 	input {

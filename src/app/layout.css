@@ -1,20 +1,9 @@
-header {
-	margin-bottom: 2rem;
-	padding: 1rem;
-}
-
-main {
-	padding: 1rem;
-	min-height: 72vh;
+.header-subtitle {
+	font-size: 0.75rem;
+	color: red;
 }
 
 .header-title {
 	font-size: 2rem;
 	font-weight: bold;
 }
-
-.header-subtitle {
-	font-size: 0.75rem;
-	color: red;
-}
-

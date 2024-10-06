@@ -4,13 +4,13 @@ import Link from 'next/link'
 
 export default function Header() {
 	return (
-		<header>
+		<header style={{ paddingBottom: '1rem' }}>
 			<Flex>
 				<div>
 					<Link className='header-title' href='/'>tmcnab.dev</Link>
-					<div className='header-subtitle'>engineer / husband / socialist</div>
+					<div className='header-subtitle'>scio me nihil scire</div>
 				</div>
-				<Flex justifyContent='start' vertical>
+				<Flex justifyContent='center' vertical>
 					<Flex>
 						<Link href='/projects'>
 							<Cpu />

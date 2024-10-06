@@ -1,14 +1,9 @@
 import './layout.css'
 import "./globals.css"
-import { Cpu, GitHub, HelpCircle, Linkedin } from 'react-feather'
 import { ReactNode } from "react"
-import Flex from "@/components/Flex"
-import Link from 'next/link'
-import TerminalButton from '@/components/Terminal/TerminalButton'
-import ThemeButton from '@/components/ThemeButton'
-import type { Metadata } from "next"
-import Header from './Header'
 import Footer from './Footer'
+import Header from './Header'
+import type { Metadata } from "next"
 
 export const metadata: Metadata = {
 	title: "tmcnab.dev • Tristan McNab's internet home",
@@ -23,7 +18,7 @@ export default function Layout({ children }: Props) {
 		<html>
 			<body>
 				<Header />
-				<main>
+				<main style={{ paddingBottom: '1rem', paddingTop: '1rem' }}>
 					{children}
 				</main>
 				<Footer />

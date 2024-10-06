@@ -1,5 +1,4 @@
 import { Project } from '@/types/Project'
-import Gyrojets from './gyrojets.mdx'
 
 export default [{
 	// children: Gyro,

@@ -59,6 +59,16 @@ select {
 
 input {
 	padding: 0.5rem;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+}
+
+
+@media (prefers-color-scheme: dark) {
+	input {
+		border-color: white;
+	}
 }
 
 p {

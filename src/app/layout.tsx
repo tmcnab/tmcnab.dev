@@ -7,6 +7,8 @@ import Link from 'next/link'
 import TerminalButton from '@/components/Terminal/TerminalButton'
 import ThemeButton from '@/components/ThemeButton'
 import type { Metadata } from "next"
+import Header from './Header'
+import Footer from './Footer'
 
 export const metadata: Metadata = {
 	title: "tmcnab.dev • Tristan McNab's internet home",
@@ -20,39 +22,11 @@ export default function Layout({ children }: Props) {
 	return (
 		<html>
 			<body>
-				<header>
-					<Flex>
-						<div>
-							<Link className='header-title' href='/'>tmcnab.dev</Link>
-							<div className='header-subtitle'>engineer / husband / socialist</div>
-						</div>
-						<Flex justifyContent='start' vertical>
-							<Flex>
-								<Link href='/projects'>
-									<Cpu />
-								</Link>
-								<Link href='/about'>
-									<HelpCircle />
-								</Link>
-								<Link href='https://www.linkedin.com/in/tmcnab/'>
-									<Linkedin />
-								</Link>
-								<Link href='https://github.com/tmcnab'>
-									<GitHub />
-								</Link>
-							</Flex>
-						</Flex>
-					</Flex>
-				</header>
+				<Header />
 				<main>
 					{children}
 				</main>
-				<footer>
-					<Flex>
-						<TerminalButton />
-						<ThemeButton />
-					</Flex>
-				</footer>
+				<Footer />
 			</body>
 		</html >
 	)

@@ -1,10 +1,11 @@
 import ListItem from './ListItem'
 import projects from '@/content/projects/projects'
+import { sortBy } from 'lodash'
 
 export default function Projects () {
 	return (
 		<ul style={{ listStyle: 'none' }}>
-			{projects.map(ListItem)}
+			{ sortBy(projects, 'title').map(ListItem)}
 		</ul>
 	)
 }

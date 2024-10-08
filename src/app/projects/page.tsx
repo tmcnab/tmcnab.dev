@@ -1,6 +1,6 @@
+import { sortBy } from 'lodash'
 import ListItem from './ListItem'
 import projects from '@/content/projects/projects'
-import { sortBy } from 'lodash'
 
 export default function Projects () {
 	return (

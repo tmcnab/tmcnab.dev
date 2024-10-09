@@ -1,33 +1,33 @@
 {
-  "name": "tmcnab.dev",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
   "dependencies": {
-    "@mdx-js/loader": "^3.0.1",
-    "@mdx-js/react": "^3.0.1",
-    "@next/mdx": "^14.2.13",
-    "@types/mdx": "^2.0.13",
-    "color-hash": "^2.0.2",
-    "lodash": "^4.17.21",
-    "next": "14.2.13",
+    "@mdx-js/loader": "^3",
+    "@mdx-js/react": "^3",
+    "@next/mdx": "^14",
+    "@types/mdx": "^2",
+    "color-hash": "^2",
+    "lodash": "^4",
+    "next": "^14",
     "react": "^18",
     "react-dom": "^18",
-    "react-feather": "^2.0.10",
-    "remark-frontmatter": "^5.0.0"
+    "react-feather": "^2",
+    "remark-frontmatter": "^5"
   },
   "devDependencies": {
-    "@types/lodash": "^4.17.10",
+    "@types/lodash": "^4",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.13",
+    "eslint-config-next": "^14",
     "typescript": "^5"
-  }
+  },
+  "name": "tmcnab.dev",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "version": "0.0.0"
 }

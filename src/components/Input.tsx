@@ -5,9 +5,10 @@ const style = {
 }
 
 export interface InputProps {
+	onChange: (value: string) => void
 	placeholder?: string
 }
 
 export default function Input (props: InputProps) {
-	return <input style={style} {...props} />
+	return <input style={style} />
 }

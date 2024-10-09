@@ -5,17 +5,17 @@ export default [{
 	tags: ['Firearms', 'Rockets'],
 	title: 'Gyrojets',
 }, {
-	description: 'Transport Triggered Architecture (8-bit)',
+	description: '8-bit Transport Triggered Architecture (TTA8)',
 	tags: ['Computers', 'CPU', 'Hardware'],
 	title: 'TTA8',
 }, {
 	description: 'Minimal User Interface Framework',
 	tags: ['CSS', 'Minimalism', 'UI', 'Web'],
-	title: 'MUIF',
+	title: 'Minimal User Interface Framework (MUIF)',
 }, {
 	description: 'TODO',
 	tags: ['Languages', 'Minimalism', 'Software'],
-	title: 'MPL',
+	title: 'Minimalist Programming Language (MPL)',
 }, {
 	description: 'A semimodern minimalist laptop computer that sips energy',
 	tags: ['Computers', 'Firmware', 'Hardware', 'Minimalism', 'Software'],
@@ -23,7 +23,7 @@ export default [{
 }, {
 	description: 'Typed Data Store',
 	tags: ['Data Store', 'Software', 'TypeScript'],
-	title: 'TDS'
+	title: 'Typed Data Store (TDS)'
 }, {
 	description: "This website and it's CSS components",
 	tags: [],

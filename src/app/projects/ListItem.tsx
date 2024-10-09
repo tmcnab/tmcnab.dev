@@ -1,17 +1,16 @@
 import { Project } from "@/types/Project"
-import Tag from "@/components/Tag"
+import Flex from "@/components/Flex"
+import TagList from "@/components/TagList"
 
-export default function ListItem (props: Project) {
+export default function ListItem(props: Project) {
 	return (
-		<li key={props.title.split(' ').join('-')}>
+		<li key={props.title.split(' ').join('-')} style={{ marginBottom: '1rem' }}>
 			<header style={{ margin: 0, paddingLeft: 0, paddingRight: 0 }}>
-				<h2><a href={`/projects/todo/`}>{props.title}</a></h2>
-				<br />
-				<small>
-					{props.tags.map(tag => <Tag key={tag} title={tag} />)}
-				</small>
+				<Flex>
+					<h3><a href={`/projects/todo/`}>{props.title}</a></h3>
+					<TagList tags={props.tags} />
+				</Flex>
 			</header>
-			<br />
 			<section style={{ paddingBottom: 16 }}>
 				<p>{props.description}</p>
 			</section>

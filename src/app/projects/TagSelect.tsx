@@ -17,7 +17,7 @@ export default function TagSelect (props: TagSelectProps) {
 	return (
 		<select onChange={onChange} value={''}>
 			<option value=''>Tags</option>
-			{allTags.map(tag => <option>{tag}</option>)}
+			{allTags.map(tag => <option key={tag}>{tag}</option>)}
 		</select>
 	)
 }

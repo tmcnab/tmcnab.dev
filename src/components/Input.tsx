@@ -4,11 +4,6 @@ const style = {
 	fontSize: '1rem',
 }
 
-export interface InputProps {
-	onChange: (value: string) => void
-	placeholder?: string
-}
-
-export default function Input (props: InputProps) {
+export default function Input () {
 	return <input style={style} />
 }

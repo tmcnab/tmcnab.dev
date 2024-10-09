@@ -9,8 +9,8 @@ import projects from '@/content/projects/projects'
 import TagSelect from './TagSelect'
 
 export default function Projects () {
-	const [selectedTag, onSelect] = useState<string>('')
-	const [filter, onChange] = useState<string>()
+	const [, onSelect] = useState<string>('')
+	const [, onChange] = useState<string>()
 	
 	return (
 		<>

@@ -1,7 +1,7 @@
 import { Project } from '@/types/Project'
 
 export default [{
-	description: 'Rockets fired from guns',
+	description: '',
 	tags: [
 		'Firearms',
 		'Rockets',
@@ -16,7 +16,7 @@ export default [{
 	],
 	title: 'Transport Triggered Architecture (TTAx)',
 }, {
-	description: 'TODO',
+	description: '',
 	tags: [
 		'Languages',
 		'Minimalism',
@@ -33,7 +33,7 @@ export default [{
 	],
 	title: 'Papertop',
 }, {
-	description: 'Typed Data Store',
+	description: '',
 	tags: [
 		'Data Store',
 		'Software',
@@ -48,14 +48,14 @@ export default [{
 	],
 	title: 'tmcnab.dev',
 }, {
-	description: "TODO",
+	description: "",
 	tags: [
 		'Hardware',
 		'Telephony',
 	],
 	title: 'SparkFone',
 }, {
-	description: 'TODO',
+	description: '',
 	slug: 'mage',
 	tags: [
 		'Game Engine',

@@ -2,38 +2,65 @@ import { Project } from '@/types/Project'
 
 export default [{
 	description: 'Rockets fired from guns',
-	tags: ['Firearms', 'Rockets'],
+	tags: [
+		'Firearms',
+		'Rockets',
+	],
 	title: 'Gyrojets',
 }, {
-	description: '8-bit Transport Triggered Architecture (TTA8)',
-	tags: ['Computers', 'CPU', 'Hardware'],
-	title: 'TTA8',
-}, {
-	description: 'Minimal User Interface Framework',
-	tags: ['CSS', 'Minimalism', 'UI', 'Web'],
-	title: 'Minimal User Interface Framework (MUIF)',
+	description: 'Traditional Microprocessors, both Harvard and Von Neumann architectures, use a Central Processing Unit (CPU) and multiple buses and bridges to process and move data around. The TTAx architecture obviates this by placing CPU instructions and input/output on a universal memory bus.',
+	tags: [
+		'Computers',
+		'CPU',
+		'Hardware',
+	],
+	title: 'Transport Triggered Architecture (TTAx)',
 }, {
 	description: 'TODO',
-	tags: ['Languages', 'Minimalism', 'Software'],
+	tags: [
+		'Languages',
+		'Minimalism',
+		'Software',
+	],
 	title: 'Minimalist Programming Language (MPL)',
 }, {
 	description: 'A semimodern minimalist laptop computer that sips energy',
-	tags: ['Computers', 'Firmware', 'Hardware', 'Minimalism', 'Software'],
+	tags: [
+		'Firmware',
+		'Hardware',
+		'Minimalism',
+		'Software',
+	],
 	title: 'Papertop',
 }, {
 	description: 'Typed Data Store',
-	tags: ['Data Store', 'Software', 'TypeScript'],
+	tags: [
+		'Data Store',
+		'Software',
+		'TypeScript',
+	],
 	title: 'Typed Data Store (TDS)'
 }, {
-	description: "This website and it's CSS components",
-	tags: [],
+	description: "This website and its components. How minimal is too minimal? How can I convey necessary information while making it look cool?",
+	tags: [
+		'Website',
+		'CSS',
+	],
 	title: 'tmcnab.dev',
 }, {
 	description: "TODO",
-	tags: ['Hardware', 'Telephony'],
+	tags: [
+		'Hardware',
+		'Telephony',
+	],
 	title: 'SparkFone',
 }, {
 	description: 'TODO',
-	tags: ['Game Engine', 'Grand Strategy', 'Games'],
-	title: 'Grand Strategy Game Engine (GSGE)',
+	slug: 'mage',
+	tags: [
+		'Game Engine',
+		'Games',
+		'Grand Strategy',
+	],
+	title: 'Map Game Engine (MaGE)',
 }] as Project[]

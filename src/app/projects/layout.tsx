@@ -2,7 +2,7 @@ import { ReactNode } from "react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-	title: "tmcnab.dev • Projects",
+	title: "tmcnab.dev › Projects",
 }
 
 export interface Props {

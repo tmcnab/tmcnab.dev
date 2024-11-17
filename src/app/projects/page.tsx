@@ -3,14 +3,14 @@
 import { sortBy } from 'lodash'
 import { useState } from 'react'
 import Flex from '@/components/Flex'
-import Input from '@/components/Input'
+// import Input from '@/components/Input'
 import ListItem from './ListItem'
 import projects from '@/content/projects/projects'
 import TagSelect from './TagSelect'
 
 export default function Projects () {
 	const [, onSelect] = useState<string>('')
-	const [, onChange] = useState<string>()
+	// const [, onChange] = useState<string>()
 	
 	return (
 		<>
@@ -18,7 +18,7 @@ export default function Projects () {
 				<Flex>
 					<h2>Projects</h2>
 					<Flex>
-						<Input onChange={onChange} placeholder='Filter' />
+						{/* <Input placeholder='Filter' /> */}
 						<TagSelect onSelect={onSelect} />
 					</Flex>
 				</Flex>

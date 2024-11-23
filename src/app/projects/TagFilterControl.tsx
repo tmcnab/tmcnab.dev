@@ -12,16 +12,12 @@ export interface TagSelectProps {
 	onSelect: (tag: string) => void
 }
 
-export default function TagSelect (props: TagSelectProps) {
+export default function TagFilterControl ({ onSelect }: TagSelectProps) {
 	const [value, setValue] = useState<string>('')
+	useEffect(() => onSelect(value), [onSelect, value])
 	
-	const onChange: ChangeEventHandler<HTMLSelectElement> = (event) => {
+	const onChange: ChangeEventHandler<HTMLSelectElement> = (event) =>
 		setValue(event.target.value)
-	}
-
-	useEffect(() => {
-		props.onSelect(value)
-	}, [value])
 
 	return (
 		<select onChange={onChange} value={value}>

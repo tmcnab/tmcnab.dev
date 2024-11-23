@@ -6,11 +6,11 @@ import Flex from '@/components/Flex'
 import Input from '@/components/Input'
 import ListItem from './ListItem'
 import projects from '@/content/projects/projects'
-import TagSelect from './TagSelect'
+import TagFilterControl from './TagFilterControl'
+import ArchivedControl from './ArchivedControl'
 
 export default function Projects () {
 	const [tag, onSelect] = useState<string>('')
-	// const [, onChange] = useState<string>()
 
 	const items = filter(projects, tag ? item => item.tags.includes(tag) : () => true)
 	
@@ -20,14 +20,16 @@ export default function Projects () {
 				<Flex>
 					<h2>Projects</h2>
 					<Flex>
+						<ArchivedControl />
 						<Input placeholder='Filter' />
-						<TagSelect onSelect={onSelect} />
+						<TagFilterControl onSelect={onSelect} />
 					</Flex>
 				</Flex>
 			</header>
-			<ul style={{ listStyle: 'none', paddingTop: '2rem' }}>
+			<br />
+			<Flex vertical>
 				{sortBy(items, 'title').map(ListItem)}
-			</ul>
+			</Flex>
 		</>
 	)
 }

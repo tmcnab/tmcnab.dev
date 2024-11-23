@@ -62,7 +62,6 @@ export default [{
 	tags: [
 		"Game Engine",
 		"Games",
-		"Grand Strategy",
 	],
 	title: "Map Game Engine (MaGE)",
 }] as Project[]

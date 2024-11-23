@@ -1,6 +1,7 @@
 'use client'
 
 import { ReactNode } from "react"
+import Flex from "./Flex"
 
 export interface ButtonProps {
 	children?: ReactNode
@@ -10,10 +11,12 @@ export interface ButtonProps {
 }
 
 export default function Button (props: ButtonProps) {
-	const children = []
-
-	if (props.icon) children.push(props.icon)
-	if (props.children) children.push(props.children)
+	const children = (
+		<Flex>
+			{props.icon}
+			{props.children}
+		</Flex>
+	)
 
 	return <button children={children} disabled={props.disabled} onClick={props.onClick} />
 }

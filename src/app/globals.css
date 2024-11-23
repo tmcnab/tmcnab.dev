@@ -42,9 +42,14 @@ a {
 	}
 }
 
-
 a:hover {
 	border-color: red;
+	border-radius: 0.25rem;
+}
+
+hr {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 body {
@@ -71,10 +76,6 @@ button {
 	padding: 0.5rem;
 }
 
-select {
-	padding-left: 0.25rem;
-}
-
 input {
 	padding: 0.5rem;
 	border-width: 1px;
@@ -86,10 +87,6 @@ input {
 	input {
 		border-color: white;
 	}
-}
-
-li {
-	margin-left: 1rem;
 }
 
 p {

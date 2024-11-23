@@ -17,7 +17,7 @@ export default function Layout({ children }: Props) {
 		<html>
 			<body>
 				<Header />
-				<main style={{ paddingBottom: '1rem', paddingTop: '1rem' }}>
+				<main>
 					{children}
 				</main>
 				<Footer />

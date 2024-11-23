@@ -1,4 +1,6 @@
-import { ChangeEventHandler } from 'react'
+'use client'
+
+import { ChangeEventHandler, useEffect, useState } from 'react'
 import { uniq } from 'lodash'
 import projects from '@/content/projects/projects'
 
@@ -11,12 +13,19 @@ export interface TagSelectProps {
 }
 
 export default function TagSelect (props: TagSelectProps) {
-	const onChange: ChangeEventHandler<HTMLSelectElement> = (event) => 
-		props.onSelect(event.target.value)
+	const [value, setValue] = useState<string>('')
+	
+	const onChange: ChangeEventHandler<HTMLSelectElement> = (event) => {
+		setValue(event.target.value)
+	}
+
+	useEffect(() => {
+		props.onSelect(value)
+	}, [value])
 
 	return (
-		<select onChange={onChange} value={''}>
-			<option value=''>Tags</option>
+		<select onChange={onChange} value={value}>
+			<option value=''>All Tags</option>
 			{allTags.map(tag => <option key={tag}>{tag}</option>)}
 		</select>
 	)

@@ -11,7 +11,7 @@ export interface Props {
 
 export default function Layout({ children }: Props) {
 	return (
-		<div style={{ maxWidth: '50%' }}>
+		<div>
 			{children}
 		</div>
 	)

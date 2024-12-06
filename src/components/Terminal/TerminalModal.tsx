@@ -1,6 +1,7 @@
+import Input from "./Input"
 import Modal from "../Modal/Modal"
-import Pre from "./Pre"
-import TextArea from "./TextArea"
+import Output from "./Output"
+import Terminal from './Terminal'
 
 export interface TerminalModalProps {
 	onClose: () => void
@@ -8,10 +9,13 @@ export interface TerminalModalProps {
 }
 
 export default function TerminalModal(props: TerminalModalProps) {
+	const term = new Terminal()
+	const onSubmit = (value: string) => term.enqueue(value)
+
 	return (
 		<Modal onClose={props.onClose} open={props.open} title='System'>
-			<Pre />
-			<TextArea />
+			<Output value={term.output} />
+			<Input history={term.history} onSubmit={onSubmit} />
 		</Modal>
 	)
 }

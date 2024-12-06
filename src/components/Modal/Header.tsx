@@ -7,10 +7,13 @@ export interface HeaderProps {
 }
 
 const style: CSSProperties = {
+	alignItems: 'center',
 	borderBottom: '1px solid white',
 	display: 'flex',
+	fontFamily: 'monospace',
 	justifyContent: 'space-between',
-	marginBottom: 0,
+	padding: '0.5rem 0.5rem 0.5rem 0.5rem',
+	textTransform: 'uppercase',
 }
 
 export default function Header (props: HeaderProps) {

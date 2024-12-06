@@ -10,9 +10,8 @@ export interface ModalProps {
 }
 
 const style: CSSProperties = {
-	backgroundColor: 'black',
 	border: '1px solid white',
-	left: '10vw',
+	left: 'calc(50% - 386px)',
 	opacity: 1,
 	position: 'absolute',
 	top: '10vh',

@@ -5,7 +5,7 @@ export interface InputProps {
 	onSubmit: (value: string) => void
 }
 
-export default function Input ({ history, onSubmit }: InputProps) {
+export default function Input ({ onSubmit }: InputProps) {
 	const ref = useRef(null)
 	const [tempValue, setTempValue] = useState<string>("")
 

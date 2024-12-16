@@ -34,10 +34,10 @@ sapiens today in TYOOL202X:
 
 <Divider />
 
+### Atomic Design
+
 <Flex>
 	<section>
-		<h3>Atomic Design</h3>
-
 		About a decade ago Brad Frost wrote what I think is a seminal book in UI Development called [Atomic Design](https://atomicdesign.bradfrost.com/) (you can read it in full online here, treat yourself). Frost posits that if you follow the ethos of _Atomic_, you will be able to build and maintain your own design system all with less labor needed which I think we can all appreciate as developers. There are some humanistic parts which aren't applicable to my design system of a single developer of a low traffic personal website so I wont cover them here (for now) but if you have a team that struggles with a design language for the product they regularly work on it is worth reading.
 
 		The central thesis is that you can break a **Page** into even more divisible parts:
@@ -46,13 +46,15 @@ sapiens today in TYOOL202X:
 		- **Organisms** are complex groupings of Molecules that belong together, like a site header
 		- **Templates** are groups of organisms and molecules that are commonly used across multiple pages in your web application where reuse makes sense
 	</section>
-	<Image
-		alt='Atomic Design book cover by Brad Frost'
-		height={300}
-		sizes='25vw'
-		src='/my-design-system/atomic-design.svg'
-		width={200}
-	/>
+	<a href='https://atomicdesign.bradfrost.com/'>
+		<Image
+			alt='Atomic Design book cover by Brad Frost'
+			height={300}
+			sizes='25vw'
+			src='/my-design-system/atomic-design.svg'
+			width={200}
+		/>
+	</a>
 </Flex>
 
 Of course I'm absolutely brutalizing the source material, but all in all it's a very relatable system for React/Component developers who are used to breaking up designs into more discrete components as needed.
@@ -61,4 +63,12 @@ Of course I'm absolutely brutalizing the source material, but all in all it's a 
 
 ### My Design System (MDS)
 
-The over-arching requirements for MDS was *"make it simple and make it for 90% of needs"*. It's a really great thought/development exercise because everyone has a different interpretation of what a "good" system is.
+The over-arching requirement for MDS was *"make it simple and make it for 90% of my needs"*. I'd also like to use the "correct" html elements where possible and have most data flow through props instead of children where possible or practical. For [`tmcnab.dev`](https://tmcnab.dev) I desired a simplistic cyberpunk / early internet style with high contrast, limited polychromacity, sharp edges, simple layouts and controls. Also people love switching between light and dark mode so I guess that's necessary too.
+
+I'm not going to belabor the technical details of the components I built, you can find the documentation [here](TODO) which is mostly for my benefit unless I release it sometime in the future.
+
+<Divider />
+
+### Results
+
+As you can see, the system works aesthetically for me and I consider it a great success. I will absolutely tweak and refactor each and every system component a hundred times until they fail to resemble their original progenitors. I'm not a perfectionist but I know what I like.

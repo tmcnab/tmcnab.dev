@@ -1,4 +1,4 @@
-import { Cpu, GitHub, HelpCircle, Linkedin } from "react-feather"
+import { GitHub, Linkedin } from "react-feather"
 import Flex from "@/components/Flex"
 import Link from 'next/link'
 

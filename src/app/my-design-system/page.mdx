@@ -1,0 +1,64 @@
+import Divider from '@/components/Divider'
+import Flex from '@/components/Flex'
+import Image from 'next/image'
+
+<Flex>
+I've worked with a lot of design systems over the years, some more coherant 
+than others but they've all been labors of love. From now on I'm going to refer
+to design systems as libraries for the sake of brevity.
+
+(Image of Design System Logos)
+</Flex>
+
+<Divider />
+
+### Components
+
+Before React, libaries largely used CSS classes and overrides to style html
+elements and jQuery to add customized behaviour and effects. It was hell. (Some
+More Words on how it was hell). Thanks to us computer touchers, we can 
+encapsulate style, behaviour and effects into one or more discrete and easily
+compilable files which makes maintenance so very much easier. It has been a sea
+change in how web development is done (unless you're in enterprise, for which I
+will pray for your soul). There is a bevy of libraries available to developers
+today that caters to any kind of website.
+
+<Divider />
+
+### What are Websites
+
+There are basically N types of websites being used by the majority of homo
+sapiens today in TYOOL202X:
+1. Aggregators: list based where users scroll through articles of content
+2. Content-Driven: TBA
+
+<Divider />
+
+<Flex>
+	<section>
+		<h3>Atomic Design</h3>
+
+		About a decade ago Brad Frost wrote what I think is a seminal book in UI Development called [Atomic Design](https://atomicdesign.bradfrost.com/) (you can read it in full online here, treat yourself). Frost posits that if you follow the ethos of _Atomic_, you will be able to build and maintain your own design system all with less labor needed which I think we can all appreciate as developers. There are some humanistic parts which aren't applicable to my design system of a single developer of a low traffic personal website so I wont cover them here (for now) but if you have a team that struggles with a design language for the product they regularly work on it is worth reading.
+
+		The central thesis is that you can break a **Page** into even more divisible parts:
+		- **Atoms** are the most indivsible component that exists and is probably just a html element (inputs, buttons and images etc)
+		- **Molecules** are components that consist of a few Atoms, like a search component or a form input with label
+		- **Organisms** are complex groupings of Molecules that belong together, like a site header
+		- **Templates** are groups of organisms and molecules that are commonly used across multiple pages in your web application where reuse makes sense
+	</section>
+	<Image
+		alt='Atomic Design book cover by Brad Frost'
+		height={300}
+		sizes='25vw'
+		src='/my-design-system/atomic-design.svg'
+		width={200}
+	/>
+</Flex>
+
+Of course I'm absolutely brutalizing the source material, but all in all it's a very relatable system for React/Component developers who are used to breaking up designs into more discrete components as needed.
+
+<Divider />
+
+### My Design System (MDS)
+
+The over-arching requirements for MDS was *"make it simple and make it for 90% of needs"*. It's a really great thought/development exercise because everyone has a different interpretation of what a "good" system is.

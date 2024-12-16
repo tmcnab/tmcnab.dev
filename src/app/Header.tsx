@@ -11,12 +11,12 @@ export default function Header() {
 				</Link>
 				<Flex justifyContent='center' vertical>
 					<Flex>
-						<Link href='/projects'>
+						{/* <Link href='/projects'>
 							<Cpu />
-						</Link>
-						<Link href='/about'>
+						</Link> */}
+						{/* <Link href='/about'>
 							<HelpCircle />
-						</Link>
+						</Link> */}
 						<Link href='https://www.linkedin.com/in/tmcnab/'>
 							<Linkedin />
 						</Link>

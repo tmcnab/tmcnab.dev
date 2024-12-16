@@ -14,6 +14,10 @@
 	}
 }
 
+html {
+	font-size: 18px;
+}
+
 html, body {
 	max-width: 100vw;
 	overflow-x: hidden;
@@ -26,6 +30,7 @@ html, body {
 	margin: 0;
 	border-radius: 0;
 	border-color: white;
+	line-height: 1.25rem;
 }
 
 a {
@@ -61,19 +66,24 @@ body {
 	padding: 1rem;
 }
 
-h1 { font-size: 3.0rem }
-h2 { font-size: 2.0rem }
-h3 { font-size: 1.5rem }
-
-main {
-	min-height: 77vh;
-}
-
 button {
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
 	padding: 0.5rem;
+}
+
+h1 { 
+	font-size: 3.0rem;
+}
+
+h2 { 
+	font-size: 2.0rem;
+}
+
+h3 { 
+	font-size: 1.5rem;
+	line-height: 3rem;
 }
 
 input {
@@ -89,7 +99,17 @@ input {
 	}
 }
 
+main {
+	min-height: 77vh;
+}
+
+
+
 p {
-	line-height: 1rem;
-	padding-bottom: 1rem;
+	padding-bottom: 0.75rem;
+	padding-top: 0.75rem;
+}
+
+ul, ol {
+	padding-left: 1rem;
 }

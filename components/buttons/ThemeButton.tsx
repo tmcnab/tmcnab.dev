@@ -1,19 +1,22 @@
 'use client'
 
 import { Button } from "../ui/button"
-import { IconSun, IconMoon } from "@tabler/icons-react"
+import { MoonIcon, SunIcon } from 'lucide-react'
 import { useTheme } from "next-themes"
 
 const ThemeButton = () => {
 	const { setTheme, theme } = useTheme()
 
-	const onClick = () => {
+	const icon = theme === 'dark'
+		? <MoonIcon />
+		: <SunIcon />
+
+	const onClick = () =>
 		setTheme(theme === "dark" ? "light" : "dark")
-	}
 	
 	return (
-		<Button onClick={onClick}>
-			{theme === "dark" ? <IconMoon /> : <IconSun />}
+		<Button className='cursor-pointer' onClick={onClick} variant='ghost'>
+			{icon}
 		</Button>
 	)
 }

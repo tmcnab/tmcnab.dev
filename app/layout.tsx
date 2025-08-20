@@ -1,4 +1,6 @@
 import "./globals.css"
+import './overrides.css'
+import { Navigation } from "./Navigation"
 import { ReactNode } from "react"
 import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarInset, SidebarProvider } from "@/components/ui/sidebar"
 import { ThemeProvider } from "@/components/ThemeProvider"
@@ -6,9 +8,8 @@ import GitHubButton from "@/components/buttons/GitHubButton"
 import Link from "next/link"
 import LinkedInButton from "@/components/buttons/LinkedInButton"
 import SearchButton from "@/components/buttons/SearchButton"
-import ThemeButton from "@/components/buttons/ThemeButton"
 import TerminalButton from "@/components/buttons/TerminalButton"
-import { Navigation } from "./Navigation"
+import ThemeButton from "@/components/buttons/ThemeButton"
 
 export interface LayoutProps {
 	readonly children: ReactNode
@@ -21,14 +22,11 @@ const Layout = (props: LayoutProps) => {
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
-					enableSystem
 					disableTransitionOnChange
+					enableSystem
 				>
 					<SidebarProvider>
 						<Sidebar>
-							<SidebarHeader>
-								<Link href='/'>tmcnab.dev</Link>
-							</SidebarHeader>
 							<SidebarContent>
 								<Navigation />
 							</SidebarContent>
